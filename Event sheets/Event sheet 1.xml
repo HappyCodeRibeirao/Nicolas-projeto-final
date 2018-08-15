@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Chakarazinho" sid="110860981772907" static="0" type="number">5</variable>
+        <event-group description="" sid="419311074345359" title="sistema">
+            <sub-events>
+                <event-block sid="278875503222069">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="270047410863003" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="830153108741154" type="naruto">
+                            <param id="0" name="Pin to">Heroi2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="652794144659963">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="160286528845342" type="Heroi2">
+                            <param id="0" name="Object">fimdefas</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="366000783981934" type="System">
+                            <param id="0" name="Layout">Layout 2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="415882244236037" title="controle">
+            <sub-events>
+                <event-block sid="553914972987259">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="993213562965544" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="358843771271421" type="Heroi2">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="267452429211318" type="naruto">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="520731953543134">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="842781341204315" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="878934435329734" type="Heroi2">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="657334813047527" type="naruto">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="547962546354782">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="567657033908567" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="399267518668394" type="Heroi2">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="569167857352650" title="animaçao">
+            <sub-events>
+                <event-group description="" sid="853334689397138" title="takle">
+                    <sub-events>
+                        <event-block sid="107203417866331">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="825700083523432" type="Keyboard">
+                                    <param id="0" name="Key">49</param>
+                                </condition>
+                                <condition behavior="Platform" id="1" name="Compare speed" sid="125716045141327" type="Heroi2">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Speed">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="743280527652852" type="naruto">
+                                    <param id="0" name="Animation">&quot;ataque&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="880341338187124">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="492828043231653" type="Keyboard">
+                                    <param id="0" name="Key">50</param>
+                                </condition>
+                                <condition behavior="Platform" id="1" name="Compare speed" sid="763899531621309" type="Heroi2">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Speed">0</param>
+                                </condition>
+                                <condition disabled="1" id="-14" name="Compare variable" sid="289233425668151" type="System">
+                                    <param id="0" name="Variable">Chakarazinho</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="920674681943884" type="naruto">
+                                    <param id="0" name="Animation">&quot;kunaiAtaque&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="956209982354964">
+                            <conditions>
+                                <condition id="4" name="On finished" sid="539786531158985" type="naruto">
+                                    <param id="0" name="Animation">&quot;ataque&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="656341792965393" type="naruto">
+                                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="522635272357684">
+                            <conditions>
+                                <condition id="4" name="On finished" sid="708808243191225" type="naruto">
+                                    <param id="0" name="Animation">&quot;kunaiAtaque&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="391738953842238" type="naruto">
+                                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="240228343147456" title="ATKs">
+                    <sub-events>
+                        <event-block sid="632687221249045">
+                            <conditions>
+                                <condition id="4" name="On finished" sid="689855118432826" type="naruto">
+                                    <param id="0" name="Animation">&quot;Rasengan&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="986886900767213" type="naruto">
+                                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="869181241477209">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="528787549346532" type="Keyboard">
+                                    <param id="0" name="Key">54</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="245678095662684" type="Keyboard">
+                                    <param id="0" name="Key">53</param>
+                                </condition>
+                                <condition behavior="Platform" id="1" name="Compare speed" sid="878264841335876" type="Heroi2">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Speed">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="259777748475955" type="naruto">
+                                    <param id="0" name="Animation">&quot;Rasengan&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="410946861393160">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="302850165929576" type="Keyboard">
+                                    <param id="0" name="Key">50</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="525213937919901">
+                                    <conditions>
+                                        <condition id="7" name="Is mirrored" sid="946881833489028" type="naruto" />
+                                        <condition behavior="Platform" id="1" name="Compare speed" sid="590871255955036" type="Heroi2">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Speed">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="475140731343727" type="naruto">
+                                            <param id="0" name="Object">kunai2</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="712579868048294">
+                                    <conditions>
+                                        <condition id="7" inverted="1" name="Is mirrored" sid="162565763377891" type="naruto" />
+                                        <condition behavior="Platform" id="1" name="Compare speed" sid="353886818704401" type="Heroi2">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Speed">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="122169216912867" type="naruto">
+                                            <param id="0" name="Object">kunai</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="478458815305967" title="animaçao moviment">
+                    <sub-events>
+                        <event-block sid="154463106923905">
+                            <conditions>
+                                <condition behavior="Platform" id="7" name="On stopped" sid="448972690221666" type="Heroi2" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="288466197707389" type="Heroi2" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="958187654015065" type="naruto">
+                                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="340548969940149">
+                            <conditions>
+                                <condition behavior="Platform" id="8" name="On moved" sid="287861421195243" type="Heroi2" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="164001327681715" type="Heroi2" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="133118755996668" type="naruto">
+                                    <param id="0" name="Animation">&quot;correndo&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="866653720860675">
+                            <conditions>
+                                <condition behavior="Platform" id="5" name="On jump" sid="953310917827947" type="Heroi2" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="545312263041103" type="naruto">
+                                    <param id="0" name="Animation">&quot;pulo&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="114422592680008">
+                            <conditions>
+                                <condition behavior="Platform" id="9" name="On landed" sid="473164447896695" type="Heroi2" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="297961420011374">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" name="Is moving" sid="956169371193985" type="Heroi2" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="879178429306263" type="naruto">
+                                            <param id="0" name="Animation">&quot;correndo&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="266820132898331">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="261900826229171" type="Heroi2" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="161821564943435" type="naruto">
+                                            <param id="0" name="Animation">&quot;parado&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="633364832272224" title="animaçao moviment2">
+                    <sub-events>
+                        <event-block sid="278859115402978">
+                            <conditions>
+                                <condition behavior="Platform" id="7" name="On stopped" sid="587968796350748" type="Heroi2" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="366678034496635" type="Heroi2" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="354030920597955" type="naruto">
+                                    <param id="0" name="Instance variable">Summon</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="420140160541423" type="naruto">
+                                    <param id="0" name="Animation">&quot;paradosapo&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="781276496873632">
+                            <conditions>
+                                <condition behavior="Platform" id="8" name="On moved" sid="752206749969462" type="Heroi2" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="300550737830649" type="Heroi2" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="421679236841111" type="naruto">
+                                    <param id="0" name="Instance variable">Summon</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="758340518678161" type="naruto">
+                                    <param id="0" name="Animation">&quot;saporeiandando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="107083767892777">
+                            <conditions>
+                                <condition behavior="Platform" id="5" name="On jump" sid="907152864573690" type="Heroi2" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="651215182911189" type="naruto">
+                                    <param id="0" name="Instance variable">Summon</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="870983536818734" type="naruto">
+                                    <param id="0" name="Animation">&quot;pulosapo&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="363467618384862">
+                            <conditions>
+                                <condition behavior="Platform" id="9" name="On landed" sid="926208908421528" type="Heroi2" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="738112860563788" type="naruto">
+                                    <param id="0" name="Instance variable">Summon</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="205898706304484">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" name="Is moving" sid="171975098026695" type="Heroi2" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="203922130972082" type="naruto">
+                                            <param id="0" name="Animation">&quot;saporeiandando&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="432314810535004">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="945363487906278" type="Heroi2" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="596167459659177" type="naruto">
+                                            <param id="0" name="Animation">&quot;paradosapo&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="925057454631459" title="obstaculo">
+            <sub-events>
+                <event-block sid="100112857453888">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="414691658903109" type="Heroi2">
+                            <param id="0" name="Object">euQueroVerSangue</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="134339187003402" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="976494523775277">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="493450184871331" type="Heroi2">
+                            <param id="0" name="Object">spike</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="175858543252749" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="199261727977164">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="717275948359572" type="Heroi2">
+                            <param id="0" name="Object">spike2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="242588153282323" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="414400462881436" title="Inimigo">
+            <sub-events>
+                <event-block sid="668600633920364">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="990245917166682" type="System">
+                            <param id="0" name="Interval (seconds)">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="119878904291399" type="inimigo">
+                            <param id="0" name="Animation">&quot;ataque&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="462955503450099" type="inimigo">
+                            <param id="0" name="Object">flecha</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="214763375418307">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="467156073948986" type="kunai">
+                            <param id="0" name="Object">inimigo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="540429144219427" type="kunai" />
+                        <action id="-9" name="Destroy" sid="432989526163004" type="inimigo" />
+                    </actions>
+                </event-block>
+                <event-block sid="290936112602451">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="414381790885347" type="naruto">
+                            <param id="0" name="Object">inimigo</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="412373826445470" type="naruto">
+                            <param id="0" name="Animation">&quot;ataque&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="279031761846545" type="inimigo" />
+                    </actions>
+                </event-block>
+                <event-block sid="357028840920784">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="402918861450203" type="kunai">
+                            <param id="0" name="Object">Sprite6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="368105518899137" type="kunai" />
+                        <action id="-9" name="Destroy" sid="785832208223333" type="Sprite6" />
+                    </actions>
+                </event-block>
+                <event-block sid="471710441522155">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="382301916546678" type="flecha">
+                            <param id="0" name="Object">naruto</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="156904600450718" type="flecha" />
+                        <action id="-9" name="Destroy" sid="531377119611734" type="naruto" />
+                        <action id="-26" name="Restart layout" sid="189367423904632" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="105090315450987">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="285254113621730" type="inimigo">
+                            <param id="0" name="Animation">&quot;ataque&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="890175945762644" type="inimigo">
+                            <param id="0" name="Animation">&quot;parado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="537813206458981">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="613308527991793" type="System">
+                            <param id="0" name="Interval (seconds)">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="245011390118643" type="Sprite6">
+                            <param id="0" name="Animation">&quot;ataque&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="322617588102068">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="102560405013450" type="Sprite6">
+                            <param id="0" name="Object">naruto</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="440953461579475" type="Sprite6">
+                            <param id="0" name="Animation">&quot;ataque&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="937019652912339" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="422203313712068" title="Campo de Testes">
+            <sub-events>
+                <event-block sid="813478185010806">
+                    <conditions>
+                        <condition id="2" name="Has ended" sid="987781492137057" type="Video" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="735875039827624" type="Video" />
+                        <action id="4" name="Set animation" sid="222876028747720" type="naruto">
+                            <param id="0" name="Animation">&quot;saporei&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="508687633539354" type="naruto">
+                            <param id="0" name="Instance variable">Summon</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="549827621440390">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="625753367819598" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set source" sid="897876787120471" type="Video">
+                            <param id="0" name="WebM source">&quot;&quot;</param>
+                            <param id="1" name="Ogg Theora source">&quot;&quot;</param>
+                            <param id="2" name="H.264 source">&quot;video.mp4&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="448507150619880" title="Hud">
+            <sub-events>
+                <event-block sid="649276194019113">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="900807840668091" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="804590532877372" type="valor">
+                            <param id="0" name="Text">Chakarazinho</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="487918781119186">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="855740743355584" type="naruto">
+                            <param id="0" name="Object">chakra</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="559694098977193" type="System">
+                            <param id="0" name="Variable">Chakarazinho</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="892504486505385">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="274981716964324" type="System">
+                            <param id="0" name="Variable">Chakarazinho</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="903428986046460" type="System">
+                            <param id="0" name="Variable">Chakarazinho</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="643138947259226">
+            <conditions>
+                <condition behavior="Pin" id="0" name="Is pinned" sid="515195666895301" type="spike" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="891248617063022" type="solo3">
+                    <param id="0" name="Pin to">spike</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
