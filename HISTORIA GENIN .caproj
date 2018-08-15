@@ -1,0 +1,1202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>HISTORIA GENIN </name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>6gc3tz9nimcg</unique-id>
+    <saved-with-version>25900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="video" version="1">Video</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>877</width>
+        <height>500</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="solo4" sid="315074715474983">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="861421584032693">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="F:\Arquivos\Cenários\Grass-Platform (1).png" />
+        </object-type>
+        <object-type name="solo" sid="354443280134727">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="335006196402529">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="772419362694055" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504202" original-source="F:\Arquivos\Cenários\Grass-Platform (3).png">
+                        <collision-poly>
+                            <point x="0.977099" y="0.84874" />
+                            <point x="0.0896401" y="0.907563" />
+                            <point x="0.10687" y="0.0420168" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="solo2" sid="494359389554336">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="116437929891955">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="629582243232342">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="943121800378737" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504202" original-source="F:\Arquivos\Cenários\Grass-Platform (3).png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.957143" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="solo3" sid="998489803693079">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="145566078921197">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="426602728307796">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="513339568641807" speed="5">
+                    <frame duration="1" hotspotX="0.503185" hotspotY="0.504202" original-source="F:\Arquivos\Cenários\Grass-Platform (2).png">
+                        <collision-poly>
+                            <point x="0.22293" y="0.117647" />
+                            <point x="0.828026" y="0.109244" />
+                            <point x="0.815287" y="0.957983" />
+                            <point x="0.254777" y="0.966387" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tree" sid="701000154475883">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="732078229835661" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\tree.png">
+                        <collision-poly>
+                            <point x="0.199219" y="0.199219" />
+                            <point x="0.5" y="0.0117188" />
+                            <point x="0.789063" y="0.210938" />
+                            <point x="0.738281" y="0.5" />
+                            <point x="0.542969" y="0.542969" />
+                            <point x="0.5" y="0.988281" />
+                            <point x="0.410156" y="0.589844" />
+                            <point x="0.183594" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spike" sid="461367369170636">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="674398167827305">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="724139398974423">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="651214986336570">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="154511693697684" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Assets Construct2\Items\spikes.png">
+                        <collision-poly>
+                            <point x="0" y="0.521429" />
+                            <point x="0.492857" y="0.521429" />
+                            <point x="1" y="0.521429" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="treezona" sid="843381559150926">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="223922947425060" speed="5">
+                    <frame duration="1" hotspotX="0.500501" hotspotY="0.500626" original-source="C:\Users\Happy Code\Desktop\treezona.png">
+                        <collision-poly>
+                            <point x="0.311311" y="0.389237" />
+                            <point x="0.499499" y="0.097622" />
+                            <point x="0.830831" y="0.211514" />
+                            <point x="0.85986" y="0.499374" />
+                            <point x="0.737738" y="0.67209" />
+                            <point x="0.499499" y="0.918648" />
+                            <point x="0.118118" y="0.852315" />
+                            <point x="0.271271" y="0.499374" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="naruto" sid="728877220760509">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Summon" sid="168522975289889" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="215743115209095">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="840290958971216">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="401269479564739">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="1" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="890930786716305" speed="8">
+                    <frame duration="1" hotspotX="0.590909" hotspotY="0.928571" original-source="F:\Naruto - Parado\Parado_02.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.5" />
+                            <point x="0.511111" y="0.0775862" />
+                            <point x="0.747222" y="0.0711206" />
+                            <point x="0.699999" y="0.448276" />
+                            <point x="0.944444" y="0.982759" />
+                            <point x="0.566667" y="0.706897" />
+                            <point x="0.1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.965517" original-source="F:\Naruto - Parado\Parado_01.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.5" />
+                            <point x="0.511111" y="0.0775862" />
+                            <point x="0.747222" y="0.0711206" />
+                            <point x="0.699999" y="0.448276" />
+                            <point x="0.944444" y="0.982759" />
+                            <point x="0.566667" y="0.706897" />
+                            <point x="0.1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.963636" original-source="F:\Naruto - Parado\Parado_03.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.5" />
+                            <point x="0.511111" y="0.0775862" />
+                            <point x="0.747222" y="0.0711206" />
+                            <point x="0.699999" y="0.448276" />
+                            <point x="0.944444" y="0.982759" />
+                            <point x="0.566667" y="0.706897" />
+                            <point x="0.1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.522727" hotspotY="0.963636" original-source="F:\Naruto - Parado\Parado_04.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.5" />
+                            <point x="0.511111" y="0.0775862" />
+                            <point x="0.747222" y="0.0711206" />
+                            <point x="0.699999" y="0.448276" />
+                            <point x="0.944444" y="0.982759" />
+                            <point x="0.566667" y="0.706897" />
+                            <point x="0.1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.522727" hotspotY="0.964286" original-source="F:\Naruto - Parado\Parado_05.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.5" />
+                            <point x="0.511111" y="0.0775862" />
+                            <point x="0.747222" y="0.0711206" />
+                            <point x="0.699999" y="0.448276" />
+                            <point x="0.944444" y="0.982759" />
+                            <point x="0.566667" y="0.706897" />
+                            <point x="0.1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.947368" original-source="F:\Naruto - Parado\Parado_06.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.5" />
+                            <point x="0.511111" y="0.0775862" />
+                            <point x="0.747222" y="0.0711206" />
+                            <point x="0.699999" y="0.448276" />
+                            <point x="0.944444" y="0.982759" />
+                            <point x="0.566667" y="0.706897" />
+                            <point x="0.1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="1" name="correndo" pingpong="0" repeatcount="1" repeatto="0" sid="808102346362957" speed="10">
+                    <frame duration="1" hotspotX="0.478261" hotspotY="0.9" original-source="F:\Naruto - Correndo\Naruto-correndo_01.png">
+                        <collision-poly>
+                            <point x="0.130435" y="0.285" />
+                            <point x="0.470108" y="0.0825" />
+                            <point x="0.880434" y="0.115" />
+                            <point x="0.809783" y="0.3875" />
+                            <point x="0.619565" y="0.54" />
+                            <point x="0.717392" y="0.6625" />
+                            <point x="0.146739" y="0.97" />
+                            <point x="0.0597826" y="0.465" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.483333" hotspotY="0.911111" original-source="F:\Naruto - Correndo\Naruto-correndo_02.png">
+                        <collision-poly>
+                            <point x="0.209601" y="0.473889" />
+                            <point x="0.456521" y="0.248056" />
+                            <point x="0.703442" y="0.0222222" />
+                            <point x="0.95" y="0.231667" />
+                            <point x="0.830616" y="0.443056" />
+                            <point x="0.636232" y="0.556667" />
+                            <point x="0.976811" y="0.798473" />
+                            <point x="0.959058" y="0.940279" />
+                            <point x="0.515399" y="0.844028" />
+                            <point x="0.0217391" y="0.992222" />
+                            <point x="0.0222826" y="0.653889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.480769" hotspotY="0.9" original-source="F:\Naruto - Correndo\Naruto-correndo_03.png">
+                        <collision-poly>
+                            <point x="0.168896" y="0.445" />
+                            <point x="0.470108" y="0.0825" />
+                            <point x="0.966973" y="0.1" />
+                            <point x="0.853052" y="0.4125" />
+                            <point x="0.619565" y="0.54" />
+                            <point x="0.908654" y="0.9825" />
+                            <point x="0.252508" y="0.9" />
+                            <point x="0" y="0.72" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.488372" hotspotY="0.895833" original-source="F:\Naruto - Correndo\Naruto-correndo_04.png">
+                        <collision-poly>
+                            <point x="0.130435" y="0.285" />
+                            <point x="0.470108" y="0.0825" />
+                            <point x="0.880434" y="0.115" />
+                            <point x="0.926062" y="0.345833" />
+                            <point x="0.619565" y="0.54" />
+                            <point x="0.717392" y="0.6625" />
+                            <point x="0.367669" y="1" />
+                            <point x="0.0116279" y="0.756666" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.473684" hotspotY="0.893617" original-source="F:\Naruto - Correndo\Naruto-correndo_05.png">
+                        <collision-poly>
+                            <point x="0.22254" y="0.375425" />
+                            <point x="0.715723" y="0.167606" />
+                            <point x="0.893592" y="0.0990426" />
+                            <point x="0.958905" y="0.302394" />
+                            <point x="0.698512" y="0.582554" />
+                            <point x="1" y="0.896544" />
+                            <point x="0.857265" y="0.994681" />
+                            <point x="0" y="0.826703" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.481481" hotspotY="0.901961" original-source="F:\Naruto - Correndo\Naruto-correndo_06.png">
+                        <collision-poly>
+                            <point x="0.204509" y="0.33402" />
+                            <point x="0.502516" y="0.146225" />
+                            <point x="0.959138" y="0.105196" />
+                            <point x="0.911635" y="0.397304" />
+                            <point x="0.721417" y="0.505687" />
+                            <point x="0.907408" y="0.97549" />
+                            <point x="0.328704" y="0.847451" />
+                            <point x="0" y="0.670882" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="pulo" pingpong="0" repeatcount="1" repeatto="0" sid="749963470345761" speed="6">
+                    <frame duration="1" hotspotX="0.462963" hotspotY="0.988636" original-source="C:\Users\Happy Code\Desktop\Naruto Sprite\Naruto - Pulo\Pulo (1).png">
+                        <collision-poly>
+                            <point x="0.0925926" y="0.102273" />
+                            <point x="0.833333" y="0.0795455" />
+                            <point x="0.833333" y="0.727273" />
+                            <point x="0.12963" y="0.840909" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.454545" hotspotY="0.988636" original-source="C:\Users\Happy Code\Desktop\Naruto Sprite\Naruto - Pulo\Pulo (2).png">
+                        <collision-poly>
+                            <point x="0.0545455" y="0.0681818" />
+                            <point x="0.727273" y="0.0909091" />
+                            <point x="0.690909" y="0.681818" />
+                            <point x="0.0545455" y="0.863636" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.460317" hotspotY="0.988636" original-source="C:\Users\Happy Code\Desktop\Naruto Sprite\Naruto - Pulo\Pulo (3).png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.170455" />
+                            <point x="0.825397" y="0.0681818" />
+                            <point x="0.920635" y="0.795455" />
+                            <point x="0.111111" y="0.784091" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.467742" hotspotY="0.988636" original-source="C:\Users\Happy Code\Desktop\Naruto Sprite\Naruto - Pulo\Pulo (4).png">
+                        <collision-poly>
+                            <point x="0.145161" y="0.0909091" />
+                            <point x="0.427419" y="0.210227" />
+                            <point x="0.903226" y="0.170455" />
+                            <point x="0.83871" y="0.761364" />
+                            <point x="0.112903" y="0.829546" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.468085" hotspotY="0.988636" original-source="C:\Users\Happy Code\Desktop\Naruto Sprite\Naruto - Pulo\Pulo (5).png">
+                        <collision-poly>
+                            <point x="0.0851064" y="0.545454" />
+                            <point x="0.893617" y="0.420454" />
+                            <point x="0.893617" y="0.897727" />
+                            <point x="0.106383" y="0.954545" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="ataque" pingpong="1" repeatcount="1" repeatto="0" sid="398486870150802" speed="10">
+                    <frame duration="1" hotspotX="0.483333" hotspotY="1" original-source="F:\Naruto Sprite\Naruto - Parado\Parado_01.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.169231" />
+                            <point x="0.733333" y="0.246154" />
+                            <point x="0.65" y="0.492308" />
+                            <point x="0.7" y="0.723077" />
+                            <point x="0.5" y="0.784615" />
+                            <point x="0.316667" y="0.707692" />
+                            <point x="0.333333" y="0.492308" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.605263" hotspotY="0.754386" original-source="D:\Naruto Sprite\Naruto - Ataque\Ataque_01.png">
+                        <collision-poly>
+                            <point x="0.473684" y="0.210526" />
+                            <point x="0.868421" y="0.280702" />
+                            <point x="0.894737" y="0.859649" />
+                            <point x="0.289474" y="0.859649" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.754386" original-source="D:\Naruto Sprite\Naruto - Ataque\Ataque_02.png">
+                        <collision-poly>
+                            <point x="0.295082" y="0.201754" />
+                            <point x="0.688525" y="0.245614" />
+                            <point x="0.852459" y="0.824561" />
+                            <point x="0.114754" y="0.789473" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.438356" hotspotY="0.745614" original-source="D:\Naruto Sprite\Naruto - Ataque\Ataque_03.png">
+                        <collision-poly>
+                            <point x="0.109589" y="0.201754" />
+                            <point x="0.849315" y="0.192982" />
+                            <point x="0.767123" y="0.780701" />
+                            <point x="0.0684932" y="0.850877" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.736842" original-source="D:\Naruto Sprite\Naruto - Ataque\Ataque_04.png">
+                        <collision-poly>
+                            <point x="0.220588" y="0.219298" />
+                            <point x="0.838235" y="0.315789" />
+                            <point x="0.808823" y="0.885965" />
+                            <point x="0.639706" y="0.802631" />
+                            <point x="0.147059" y="0.877193" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="0" name="kunaiAtaque" pingpong="0" repeatcount="1" repeatto="0" sid="618379218443759" speed="12">
+                    <frame duration="1" hotspotX="0.596491" hotspotY="0.833333" original-source="D:\Naruto Sprite\Naruto - Kunai\Kunai_01.png">
+                        <image-point name="Imagepoint 1" x="0.894737" y="0.402778" />
+                        <collision-poly>
+                            <point x="0.315789" y="0.125" />
+                            <point x="0.807018" y="0.111111" />
+                            <point x="0.947368" y="0.958333" />
+                            <point x="0.192982" y="0.944444" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.408451" hotspotY="0.888889" original-source="D:\Naruto Sprite\Naruto - Kunai\Kunai_02.png">
+                        <image-point name="Imagepoint 1" x="0.929577" y="0.541667" />
+                        <collision-poly>
+                            <point x="0.315789" y="0.125" />
+                            <point x="0.807018" y="0.111111" />
+                            <point x="0.947368" y="0.958333" />
+                            <point x="0.192982" y="0.944444" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.413793" hotspotY="0.930556" original-source="D:\Naruto Sprite\Naruto - Kunai\Kunai_03.png">
+                        <image-point name="Imagepoint 1" x="1.01724" y="0.513889" />
+                        <collision-poly>
+                            <point x="0.224138" y="0.25" />
+                            <point x="0.844828" y="0.25" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.463768" hotspotY="0.861111" original-source="D:\Naruto Sprite\Naruto - Kunai\Kunai_04.png">
+                        <image-point name="Imagepoint 1" x="1.01449" y="0.513889" />
+                        <collision-poly>
+                            <point x="0.188406" y="0.347222" />
+                            <point x="0.884058" y="0.333333" />
+                            <point x="0.855072" y="0.944444" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.45614" hotspotY="0.861111" original-source="D:\Naruto Sprite\Naruto - Kunai\Kunai_05.png">
+                        <image-point name="Imagepoint 1" x="1.01754" y="0.513889" />
+                        <collision-poly>
+                            <point x="0.22807" y="0.388889" />
+                            <point x="0.877193" y="0.236111" />
+                            <point x="0.912281" y="0.958333" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.892308" original-source="F:\Naruto Sprite\Naruto - Parado\Parado_01.png">
+                        <image-point name="Imagepoint 1" x="0.916667" y="0.523077" />
+                        <collision-poly>
+                            <point x="0.5" y="0.169231" />
+                            <point x="0.733333" y="0.246154" />
+                            <point x="0.65" y="0.492308" />
+                            <point x="0.7" y="0.723077" />
+                            <point x="0.5" y="0.784615" />
+                            <point x="0.316667" y="0.707692" />
+                            <point x="0.333333" y="0.492308" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="17" loop="0" name="Rasengan" pingpong="0" repeatcount="1" repeatto="0" sid="984824825974817" speed="10">
+                    <frame duration="1" hotspotX="0.560606" hotspotY="0.731343" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_01.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.0454545" y="0.985075" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.731343" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_02.png" />
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.731343" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_03.png" />
+                    <frame duration="1" hotspotX="0.553571" hotspotY="0.731343" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_04.png" />
+                    <frame duration="1" hotspotX="0.5625" hotspotY="0.731343" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_05.png" />
+                    <frame duration="1" hotspotX="0.568965" hotspotY="0.731343" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_06.png" />
+                    <frame duration="1" hotspotX="0.561404" hotspotY="0.731343" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_07.png" />
+                    <frame duration="1" hotspotX="0.310345" hotspotY="0.868132" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_09.png" />
+                    <frame duration="1" hotspotX="0.25641" hotspotY="0.813187" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_10.png" />
+                    <frame duration="1" hotspotX="0.27" hotspotY="0.824176" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_11.png" />
+                    <frame duration="1" hotspotX="0.243902" hotspotY="0.868132" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_12.png" />
+                    <frame duration="1" hotspotX="0.251799" hotspotY="0.923077" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_13.png" />
+                    <frame duration="1" hotspotX="0.344444" hotspotY="0.846154" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_14.png" />
+                    <frame duration="1" hotspotX="0.373333" hotspotY="0.825397" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_22.png" />
+                    <frame duration="1" hotspotX="0.363636" hotspotY="0.888889" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_23.png" />
+                    <frame duration="1" hotspotX="0.402778" hotspotY="0.857143" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_24.png" />
+                    <frame duration="1" hotspotX="0.285714" hotspotY="0.825397" original-source="F:\Naruto Sprite\Naruto - Rasengan\Rasengan_25.png" />
+                </animation>
+                <animation framecount="8" loop="0" name="saporei" pingpong="0" repeatcount="1" repeatto="0" sid="751425398317473" speed="5">
+                    <frame duration="1" hotspotX="0.409091" hotspotY="0.93" original-source="D:\Nova pasta\imagens\sapo-rei_02.png" />
+                    <frame duration="1" hotspotX="0.406015" hotspotY="0.93" original-source="D:\Nova pasta\imagens\sapo-rei_03.png" />
+                    <frame duration="1" hotspotX="0.410256" hotspotY="0.93" original-source="D:\Nova pasta\imagens\sapo-rei_04.png" />
+                    <frame duration="1" hotspotX="0.413223" hotspotY="0.93" original-source="D:\Nova pasta\imagens\sapo-rei_01.png" />
+                    <frame duration="1" hotspotX="0.409091" hotspotY="0.93" original-source="D:\Nova pasta\imagens\sapo-rei_05.png" />
+                    <frame duration="1" hotspotX="0.405405" hotspotY="0.93" original-source="D:\Nova pasta\imagens\sapo-rei_06.png" />
+                    <frame duration="1" hotspotX="0.409091" hotspotY="0.93" original-source="D:\Nova pasta\imagens\sapo-rei_07.png" />
+                    <frame duration="1" hotspotX="0.409449" hotspotY="0.93" original-source="D:\Nova pasta\imagens\sapo-rei_08.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="saporeiandando" pingpong="0" repeatcount="1" repeatto="0" sid="301350368747560" speed="5">
+                    <frame duration="1" hotspotX="0.432432" hotspotY="0.917526" />
+                    <frame duration="1" hotspotX="0.435185" hotspotY="0.917526" />
+                    <frame duration="1" hotspotX="0.433333" hotspotY="0.917241" />
+                    <frame duration="1" hotspotX="0.432432" hotspotY="0.917526" />
+                </animation>
+                <animation framecount="2" loop="1" name="paradosapo" pingpong="0" repeatcount="1" repeatto="0" sid="329785903579999" speed="5">
+                    <frame duration="1" hotspotX="0.459459" hotspotY="0.845361" />
+                    <frame duration="1" hotspotX="0.462963" hotspotY="0.845361" />
+                </animation>
+                <animation framecount="1" loop="1" name="pulosapo" pingpong="0" repeatcount="1" repeatto="0" sid="533650552665237" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.931035" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="150174050185817">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Heroi2" sid="580196216720768">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="808406039231623">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="435321683390252">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="835694209586867">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="322917809642544">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373381030642183" speed="5">
+                    <frame duration="1" hotspotX="0.484375" hotspotY="0.808594" original-source="C:\Users\Happy Code\Desktop\hero.png">
+                        <collision-poly>
+                            <point x="0.193359" y="0.193359" />
+                            <point x="0.5" y="0.0410156" />
+                            <point x="0.806641" y="0.193359" />
+                            <point x="0.882813" y="0.5" />
+                            <point x="0.84375" y="0.617188" />
+                            <point x="0.736328" y="0.742188" />
+                            <point x="0.615234" y="0.804688" />
+                            <point x="0.5" y="0.820313" />
+                            <point x="0.365234" y="0.798828" />
+                            <point x="0.232422" y="0.71875" />
+                            <point x="0.149414" y="0.609375" />
+                            <point x="0.117188" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="euQueroVerSangue" sid="174229418313733">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="456588699390630" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spike2" sid="422422760189801">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="191935541990132">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550648818208360" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Assets Construct2\Items\spikes.png">
+                        <collision-poly>
+                            <point x="0" y="0.521429" />
+                            <point x="0.492857" y="0.521429" />
+                            <point x="1" y="0.521429" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="solomov2" sid="344773575224912">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="702818463716714">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="431978474823645">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403881001524252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Arquivos\Cenários\Jungle-Platform (3).png">
+                        <collision-poly>
+                            <point x="0.0619047" y="0.278571" />
+                            <point x="0.511111" y="0.29" />
+                            <point x="0.985185" y="0.29" />
+                            <point x="1" y="0.5" />
+                            <point x="0.923282" y="0.89" />
+                            <point x="0.065608" y="0.79" />
+                            <point x="0.0142857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="solomov" sid="714939049582127">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="571987655491815">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="410463248079423">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="598450819034645" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Arquivos\Cenários\Jungle-Platform (3).png">
+                        <collision-poly>
+                            <point x="0.058201" y="0.328571" />
+                            <point x="0.959259" y="0.34" />
+                            <point x="0.862962" y="0.72" />
+                            <point x="0.103175" y="0.68" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="solomov3" sid="633045868955307">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="706760374277749">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="879009837715935">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="533571061032209" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Assets Construct2\Tiles\grassHalf.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="0.985714" y="0.5" />
+                            <point x="0.571429" y="0.571429" />
+                            <point x="0.428571" y="0.571429" />
+                            <point x="0.0142857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spike3" sid="916564373319576">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="958961347146750">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="499188850688834" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Assets Construct2\Items\spikes.png">
+                        <collision-poly>
+                            <point x="0.757143" y="0.757143" />
+                            <point x="0.5" y="0.528571" />
+                            <point x="0.242857" y="0.757143" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kunai1" sid="395042073917664">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="788096218546251" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Kunai_Knife.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kunai" sid="941958899823009">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="306363325456984">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="679853732514382" speed="5">
+                    <frame duration="1" hotspotX="0.00604752" hotspotY="0.0569106" original-source="C:\Users\Happy Code\Desktop\ninja_new_day2_kunaibig.png">
+                        <collision-poly>
+                            <point x="0.0276458" y="0.173442" />
+                            <point x="0.499784" y="0.00813008" />
+                            <point x="1" y="0.498645" />
+                            <point x="0.499784" y="0.99458" />
+                            <point x="0.0276458" y="0.826558" />
+                            <point x="0" y="0.498645" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kunai2" sid="854340145047966">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="606401258725748">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="189284762490485" speed="5">
+                    <frame duration="1" hotspotX="0.00259179" hotspotY="0.00271003" original-source="C:\Users\Happy Code\Desktop\ninja_new_day2_kunaibig.png">
+                        <collision-poly>
+                            <point x="0.0276458" y="0.173442" />
+                            <point x="0.499784" y="0.00813008" />
+                            <point x="1" y="0.498645" />
+                            <point x="0.499784" y="0.99458" />
+                            <point x="0.0276458" y="0.826558" />
+                            <point x="0" y="0.498645" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="854647034654029">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="673671589790124" speed="5">
+                    <frame duration="1" hotspotX="0.501014" hotspotY="0.5" original-source="F:\Arquivos\Cenários\Grass-Platform (1).png">
+                        <collision-poly>
+                            <point x="0.0162272" y="0.0701754" />
+                            <point x="0.498986" y="0" />
+                            <point x="0.969574" y="0.131579" />
+                            <point x="0.908722" y="0.605263" />
+                            <point x="0.498986" y="0.815789" />
+                            <point x="0.0851927" y="0.631579" />
+                            <point x="0.0385396" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="273750574364758">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="649908772967053" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="F:\Arquivos\Objetos\Tree.png">
+                        <collision-poly>
+                            <point x="0.296296" y="0.154341" />
+                            <point x="0.5" y="0.0128617" />
+                            <point x="0.753086" y="0.128617" />
+                            <point x="0.950617" y="0.498392" />
+                            <point x="0.580247" y="0.78135" />
+                            <point x="0.5" y="0.993569" />
+                            <point x="0.506173" y="0.736334" />
+                            <point x="0.0679012" y="0.498392" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="555462532627603">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="106789636761969" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Arquivos\Objetos\Rock2.png">
+                        <collision-poly>
+                            <point x="0.303191" y="0.306452" />
+                            <point x="0.5" y="0.078853" />
+                            <point x="0.66844" y="0.335125" />
+                            <point x="0.714539" y="0.5" />
+                            <point x="0.881206" y="0.879928" />
+                            <point x="0.5" y="0.9319" />
+                            <point x="0.0815603" y="0.917563" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="498854436341229">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="861847570526615" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Arquivos\Objetos\Tree2.png">
+                        <collision-poly>
+                            <point x="0.296296" y="0.154341" />
+                            <point x="0.5" y="0.0128617" />
+                            <point x="0.753086" y="0.128617" />
+                            <point x="0.950617" y="0.498392" />
+                            <point x="0.606914" y="0.688017" />
+                            <point x="0.5" y="0.993569" />
+                            <point x="0.17284" y="0.829668" />
+                            <point x="0.0679012" y="0.498392" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="776870392625804">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="354819102134437" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502959" original-source="F:\Arquivos\Objetos\Rock.png">
+                        <collision-poly>
+                            <point x="0.405556" y="0.431953" />
+                            <point x="0.5" y="0.337278" />
+                            <point x="0.722222" y="0.295858" />
+                            <point x="0.855556" y="0.497041" />
+                            <point x="0.894444" y="0.887574" />
+                            <point x="0.5" y="0.928994" />
+                            <point x="0.116667" y="0.87574" />
+                            <point x="0.166667" y="0.497041" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="download" sid="702315024926746">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="513163404536754" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503145" original-source="C:\Users\Happy Code\Downloads\download (1).jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="solo5" sid="697343132151945">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="114093684946406">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="568807697636715" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504202" original-source="F:\Arquivos\Cenários\Grass-Platform (3).png">
+                        <collision-poly>
+                            <point x="0.977099" y="0.84874" />
+                            <point x="0.0896401" y="0.907563" />
+                            <point x="0.10687" y="0.0420168" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="solo6" sid="163271900340650">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="530476354732071">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="281804926588508" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504202" original-source="F:\Arquivos\Cenários\Grass-Platform (3).png">
+                        <collision-poly>
+                            <point x="0.0687023" y="0.0420168" />
+                            <point x="0.976227" y="0.857143" />
+                            <point x="0.110687" y="0.890756" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="download2" sid="448380142022981">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="585048274472635" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503145" original-source="C:\Users\Happy Code\Downloads\download (1).jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inimigo" sid="326067724013503">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="232037145115786" speed="5">
+                    <frame duration="1" hotspotX="0.0888889" hotspotY="0.536585" original-source="F:\Arquivos\Inimigos\PC Computer - Naruto Online - Hidden Sand Archer Forces\Hidden Sand Archer Forces\84_Asset_6.png">
+                        <collision-poly>
+                            <point x="0.811111" y="0.5" />
+                            <point x="0.988889" y="0.993902" />
+                            <point x="0.5" y="0.615854" />
+                            <point x="0.0888889" y="0.951219" />
+                            <point x="0.0777778" y="0.5" />
+                            <point x="0.422222" y="0.231707" />
+                            <point x="0.5" y="0.0304878" />
+                            <point x="0.733333" y="0.146341" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="ataque" pingpong="0" repeatcount="1" repeatto="0" sid="168084549504157" speed="10">
+                    <frame duration="3" hotspotX="0.570313" hotspotY="0.9" original-source="F:\Arquivos\Inimigos\PC Computer - Naruto Online - Hidden Sand Archer Forces\Hidden Sand Archer Forces\94_Asset_38.png">
+                        <image-point name="Imagepoint 1" x="0.539063" y="0.266667" />
+                        <collision-poly>
+                            <point x="0.710938" y="0.5" />
+                            <point x="0.976563" y="0.975" />
+                            <point x="0.5" y="0.716667" />
+                            <point x="0.03125" y="0.966667" />
+                            <point x="0.210938" y="0.5" />
+                            <point x="0.1875" y="0.2" />
+                            <point x="0.5" y="0.0666667" />
+                            <point x="0.835938" y="0.175" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.511628" hotspotY="1" original-source="F:\Arquivos\Inimigos\PC Computer - Naruto Online - Hidden Sand Archer Forces\Hidden Sand Archer Forces\2_Asset_39.png">
+                        <image-point name="Imagepoint 1" x="0.550388" y="0.378788" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="flecha" sid="716231484286750">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="976242216199068">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="887159653805441" speed="5">
+                    <frame duration="1" hotspotX="0.0103093" hotspotY="0.0566038" original-source="F:\Arquivos\Woden Arrow.png">
+                        <collision-poly>
+                            <point x="0.953608" y="0.490566" />
+                            <point x="0.896907" y="0.622642" />
+                            <point x="0.5" y="0.566038" />
+                            <point x="0.0927835" y="0.660377" />
+                            <point x="0.0515464" y="0.490566" />
+                            <point x="0.072165" y="0.264151" />
+                            <point x="0.5" y="0.415094" />
+                            <point x="0.896907" y="0.377358" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="830153889803825">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="836593780536294" speed="5">
+                    <frame duration="1" hotspotX="0.487179" hotspotY="0.932099" original-source="F:\Arquivos\Inimigos\PC Computer - Naruto Online - Outros\Parado_01.png">
+                        <collision-poly>
+                            <point x="0.717949" y="0.5" />
+                            <point x="0.880342" y="0.91358" />
+                            <point x="0.504274" y="0.604938" />
+                            <point x="0.153846" y="0.888889" />
+                            <point x="0.0854701" y="0.5" />
+                            <point x="0.282051" y="0.0617284" />
+                            <point x="0.504274" y="0.166667" />
+                            <point x="0.709402" y="0.209877" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="ataque" pingpong="1" repeatcount="1" repeatto="0" sid="768262388343190" speed="5">
+                    <frame duration="1" hotspotX="0.478632" hotspotY="1.00617" original-source="F:\Arquivos\Inimigos\PC Computer - Naruto Online - Outros\Ataque\Ataque_1.png">
+                        <collision-poly>
+                            <point x="0.854701" y="0.901235" />
+                            <point x="0.042735" y="0.888889" />
+                            <point x="0.119658" y="0.475308" />
+                            <point x="0.367521" y="0.0432099" />
+                            <point x="0.786325" y="0.299383" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.479042" hotspotY="1.00676" original-source="F:\Arquivos\Inimigos\PC Computer - Naruto Online - Outros\Ataque\Ataque_2.png">
+                        <collision-poly>
+                            <point x="0.94012" y="0.97973" />
+                            <point x="0.431138" y="0.797297" />
+                            <point x="0.0718562" y="0.445946" />
+                            <point x="0.149701" y="0.155405" />
+                            <point x="0.604791" y="0.47973" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.477419" hotspotY="1.00676" original-source="F:\Arquivos\Inimigos\PC Computer - Naruto Online - Outros\Ataque\Ataque_3.png">
+                        <collision-poly>
+                            <point x="0.516129" y="0.385135" />
+                            <point x="0.945161" y="0.851351" />
+                            <point x="0.432258" y="0.662161" />
+                            <point x="0.203226" y="0.858108" />
+                            <point x="0.193548" y="0.189189" />
+                            <point x="0.922581" y="0.0743243" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Video" sid="721757846358004">
+            <plugin id="video" />
+        </object-type>
+        <object-type name="Sprite7" sid="630399310894684">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="369544175597191" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="964774522894826">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="964828846768133" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505495" original-source="F:\Arquivos\Inimigos\PC Computer - Naruto Online - Hawks\Black Hawk\1_Asset_43.png">
+                        <collision-poly>
+                            <point x="0.0319149" y="0.0659341" />
+                            <point x="0.5" y="0.494505" />
+                            <point x="0.968085" y="0.0659341" />
+                            <point x="0.882979" y="0.494505" />
+                            <point x="0.829787" y="0.648352" />
+                            <point x="0.5" y="0.978022" />
+                            <point x="0.170213" y="0.648352" />
+                            <point x="0.117021" y="0.494505" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fimdefas" sid="697042436364057">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="247695045334614" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inimigodist" sid="332908841236255">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="394956587415753">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="142167285811944" speed="5">
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.920732" original-source="F:\Arquivos\Inimigos\PC Computer - Naruto Online - Hidden Sand Archer Forces\Hidden Sand Archer Forces\84_Asset_6.png">
+                        <collision-poly>
+                            <point x="0.811111" y="0.5" />
+                            <point x="0.988889" y="0.993902" />
+                            <point x="0.5" y="0.615854" />
+                            <point x="0.0888889" y="0.951219" />
+                            <point x="0.0777778" y="0.5" />
+                            <point x="0.422222" y="0.231707" />
+                            <point x="0.5" y="0.0304878" />
+                            <point x="0.733333" y="0.146341" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="ataque" pingpong="0" repeatcount="1" repeatto="0" sid="563833333320520" speed="10">
+                    <frame duration="3" hotspotX="0.570313" hotspotY="0.9" original-source="F:\Arquivos\Inimigos\PC Computer - Naruto Online - Hidden Sand Archer Forces\Hidden Sand Archer Forces\94_Asset_38.png">
+                        <image-point name="Imagepoint 1" x="0.539063" y="0.266667" />
+                        <collision-poly>
+                            <point x="0.710938" y="0.5" />
+                            <point x="0.976563" y="0.975" />
+                            <point x="0.5" y="0.716667" />
+                            <point x="0.03125" y="0.966667" />
+                            <point x="0.210938" y="0.5" />
+                            <point x="0.1875" y="0.2" />
+                            <point x="0.5" y="0.0666667" />
+                            <point x="0.835938" y="0.175" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.565891" hotspotY="0.901515" original-source="F:\Arquivos\Inimigos\PC Computer - Naruto Online - Hidden Sand Archer Forces\Hidden Sand Archer Forces\2_Asset_39.png">
+                        <image-point name="Imagepoint 1" x="0.550388" y="0.378788" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chakra" sid="519301538991945">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Ckakra" pingpong="0" repeatcount="1" repeatto="0" sid="899625639548529" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Chakra_01.png">
+                        <collision-poly>
+                            <point x="0.180556" y="0.45" />
+                            <point x="0.486111" y="0.02" />
+                            <point x="0.763889" y="0.4" />
+                            <point x="0.833333" y="0.9" />
+                            <point x="0.180556" y="0.95" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Chakra_02.png">
+                        <collision-poly>
+                            <point x="0.225806" y="0.37" />
+                            <point x="0.556452" y="0.21" />
+                            <point x="0.83871" y="0.44" />
+                            <point x="0.822581" y="0.94" />
+                            <point x="0.0806452" y="0.91" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Chakra_03.png">
+                        <collision-poly>
+                            <point x="0.210526" y="0.4" />
+                            <point x="0.335526" y="0.205" />
+                            <point x="0.723684" y="0.41" />
+                            <point x="0.68421" y="0.96" />
+                            <point x="0.0789474" y="0.91" />
+                            <point x="0.0394737" y="0.675" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chakrahud" sid="957490108319134">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Ckakra" pingpong="0" repeatcount="1" repeatto="0" sid="839588830093644" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Chakra_01.png" />
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Chakra_02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Chakra_03.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="igual" sid="364462214216412">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="valor" sid="289517200693013">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="maxi" sid="276609899389263">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="32" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="video.mp4" />
+    </files-folder>
+</c2project>
